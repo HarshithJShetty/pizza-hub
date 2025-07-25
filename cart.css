@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: rgba(0, 9, 12, 1);
+    --second-bg-color: #b00e0e;
+    --text-color: #ededed;
+    --main-color: #ff0000;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+.header.sticky {
+    background: var(--bg-color);
+}
+
+.logo {
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.heading {
+    
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 6rem;
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  .heading .cart {
+    color: #ff0000; /* teal or any contrasting color */
+  }
+.cart-section {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #070e16;
+  color: #fff;
+}
+
+.cart-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+.cart-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.item-details {
+  color: #fff;
+  flex: 1;
+}
+.item-details h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.cart-item p {
+  margin: 0;
+  font-size: 25px;
+}
+ h3{
+    font-size: 30px;
+}
+.item-details p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #ccc;
+}
+.cart-item button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.remove-button {
+  background-color: #ff0000;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #e60000;
+}
+
+
+.cart-item button:hover {
+  background-color: #e60000;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Checkout Section */
+
+.checkout-section {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #070e16;
+  color: #fff;
+}
+
+.checkout-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.checkout-section p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+/* Ensure full-height background for pages */
+html, body {
+  height: 100%;
+  background-color: #070e16; /* or rgba(0, 9, 12, 1) if you prefer */
+}
+
+/* Optionally for cart and checkout sections to force fill the screen */
+.cart-section,
+.checkout-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn {
+  display: inline-block;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #e60000;
+}

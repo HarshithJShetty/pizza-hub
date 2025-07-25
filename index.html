@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>PIZZA HUB</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+
+<body>
+	<header>
+	  <div class="logo">
+		<img src="iconlogo.png" alt="Pizza lab Logo">
+	  </div>
+	  <nav>
+		<ul>
+      <li><a href="index.html"class="active">Home</a></li>
+		  <li><a href="about.html">About</a></li>
+		  <li><a href="menu.html">Menu</a></li>
+		  <li><a href="reservation.html">Reservations</a></li>
+		  <li><a href="cart.html">Cart</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+		</ul>
+	  </nav>
+	</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to Pizza HUB</h1>
+    <p>Experience the Taste of Perfection</p>
+    <a href="menu.html" class="btn">Explore Our Menu</a>
+  </div>
+</section>
+
+<section class="about dark-theme">
+  <div class="about-content">
+    <h2>About Pizza HUB</h2>
+    <p>Experience the finest gourmet Pizzas in a cozy and rustic atmosphere. At Pizza Hub, we are dedicated to delivering exceptional flavors that will tantalize your taste buds.</p>
+    <p>Our chefs meticulously craft each Pizza using locally sourced ingredients and unique flavor combinations. From juicy beef patties to mouthwatering vegetarian options, there's something for everyone.</p>
+    <a href="menu.html" class="btn">Explore Our Menu</a>
+  </div>
+  <div class="about-image">
+    <img src="downloadedImage.png" alt="About Image">
+  </div>
+</section>
+
+
+<section class="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="2.png" alt="pizza 1">
+      <h3>Classic Cheese Pizza</h3>
+      <p>A juicy beef patty topped with melted cheese, fresh lettuce, tomato, and our special sauce. Served with a side of crispy fries.</p>
+      <button onclick="addToCart('Classic Cheese Pizza', 199.99, '2.png')">Add to Cart</button>
+
+    </div>
+    <div class="menu-item">
+      <img src="3.png" alt="pizza 2">
+      <h3>Veggie Delight Pizza</h3>
+      <p>A delicious veggie patty made from a blend of fresh vegetables and spices. Topped with avocado, sprouts, and tangy mayo. Served with a side of sweet potato fries.</p>
+      <button onclick="addToCart('Veggie Delight Pizza', 199.99, '3.png')">Add to Cart</button>
+
+    </div>
+    <div class="menu-item">
+      <img src="1.png" alt="Pizza 3">
+      <h3>Spicy BBQ Pizza</h3>
+      <p>A fiery Pizza packed with flavor! Grilled chicken breast smothered in spicy BBQ sauce, topped with jalapenos, crispy onion rings, and chipotle mayo. Served with a side of coleslaw.</p>
+      <button onclick="addToCart('Spicy BBQ Pizza', 299.99, '1.png')">Add to Cart</button>
+
+    </div>
+  </div>
+</section>
+
+<section class="reservations">
+  <div class="reservation-form">
+    <h2>Make a Reservation</h2>
+    <form action="submit_reservation.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <textarea name="message" placeholder="Additional Message" rows="5"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    
+  </div>
+</section>
+<script>
+    function addToCart(name, price, image) {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({ name, price, image });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(`${name} added to cart!`);
+    }
+  
+</script>
+
+
+</body>
+</html>

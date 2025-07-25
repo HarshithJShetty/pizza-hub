@@ -1,0 +1,167 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+
+  
+    <header class="header">
+      <a href="#" class="logo">Menu on Pizza HUB.<span class="animate" style="--i:1;"></span></a>
+  
+      <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+  
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html"class="active">Menu</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+        <span class="active-nav"></span>
+        <span class="animate" style="--i:2;"></span>
+      </nav>
+    </header>
+  
+
+  <section class="menu-section">
+    <div class="menu-item">
+      <img src="2.png" alt="Classic Cheese Pizza">
+      <h3>Classic Cheese Pizza</h3>
+      <p>₹199.99</p>
+      <button onclick="addToCart('Classic Cheese Pizza', 199.99, '2.png')">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="3.png" alt="Veggie Delight Pizza">
+      <h3>Veggie Delight Pizza</h3>
+      <p>₹199.99</p>
+      <button onclick="addToCart('Veggie Delight Pizza', 199.99, '3.png')">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="1.png" alt="Spicy BBQ Pizza">
+      <h3>Spicy BBQ Pizza</h3>
+      <p>₹299.99</p>
+      <button onclick="addToCart('Spicy BBQ Pizza', 299.99, '1.png')">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+        <img src="Pepperoni Pizza.png" alt="Pepperoni Pizza">
+        <h3>Pepperoni Pizza</h3>
+        <p>₹299.99</p>
+        <button onclick="addToCart('Pepperoni Pizza', 299.99, 'Pepperoni Pizza.png')">Add to Cart</button>
+      </div>
+
+    <div class="menu-item">
+        <img src="burger1.jpg" alt="Classic Cheese Burger">
+        <h3>Classic Cheese Burger</h3>
+        <p>₹199.99</p>
+        <button onclick="addToCart('Classic Cheese Burger', 199.99, 'burger1.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="burger2.jpg" alt="Veggie Delight Burger">
+        <h3>Veggie Delight Burger</h3>
+        <p>₹199.99</p>
+        <button onclick="addToCart('Veggie Delight Burger', 199.99, 'burger2.jpg')">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="burger3.jpg" alt="Spicy BBQ Burger">
+        <h3>Spicy BBQ Burger</h3>
+        <p>₹299.99</p>
+        <button onclick="addToCart('Spicy BBQ Burger', 299.99, 'burger3.jpg')">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="Double Cheeseburger with BBQ Sauce.png" alt="Double Cheeseburger with BBQ Sauce">
+        <h3>Double Cheeseburger with BBQ Sauce</h3>
+        <p>₹299.99</p>
+        <button onclick="addToCart('Double Cheeseburger with BBQ Sauce', 299.99, 'Double Cheeseburger with BBQ Sauce.png')">Add to Cart</button>
+      </div>
+  <div class="menu-item">
+    <img src="downloadedImage (9).png" alt="BBQ Chicken Leg Piece">
+    <h3>BBQ Chicken Leg Piece</h3>
+    <p>₹180</p>
+    <button onclick="addToCart('BBQ Chicken Leg Piece', 180, 'downloadedImage (9).png')">Add to Cart</button>
+  </div>
+  <div class="menu-item">
+    <img src="downloadedImage (10).png" alt="Grilled Fried Chicken">
+    <h3>Grilled Fried Chicken</h3>
+    <p>₹160</p>
+    <button onclick="addToCart('Grilled Fried Chicken', 160, 'downloadedImage (10).png')">Add to Cart</button>
+  </div>
+  <div class="menu-item">
+    <img src="downloadedImage (3).png" alt="French fries">
+    <h3>French fries</h3>
+    <p>₹100</p>
+    <button onclick="addToCart('French fries', 100, 'downloadedImage (3).png')">Add to Cart</button>
+  </div>
+  <div class="menu-item">
+    <img src="downloadedImage (8).png" alt="Classic Fruit Tart">
+    <h3>Classic Fruit Tart</h3>
+    <p>₹140</p>
+    <button onclick="addToCart('Classic Fruit Tart', 140, 'downloadedImage (8).png')">Add to Cart</button>
+  </div>
+  <div class="menu-item">
+    <img src="cold coffee.png" alt="Cold Coffee">
+    <h3>Cold Coffee</h3>
+    <p>₹140</p>
+    <button onclick="addToCart('Cold Coffee', 140, 'cold coffee.png')">Add to Cart</button>
+  </div> 
+  <div class="menu-item">
+    <img src="Lemon.png" alt="Lemon Juice">
+    <h3>Lemon Juice</h3>
+    <p>₹60</p>
+    <button onclick="addToCart('Lemon Juice', 60, 'Lemon.png')">Add to Cart</button>
+  </div>
+  <div class="menu-item">
+    <img src="downloadedImage (6).png" alt="Pepsi">
+    <h3>Pepsi</h3>
+    <p>₹70</p>
+    <button onclick="addToCart('Pepsi', 70, 'downloadedImage (6).png')">Add to Cart</button>
+  </div>
+  <div class="menu-item">
+    <img src="downloadedImage (5).png" alt="Coke">
+    <h3>Coke</h3>
+    <p>₹70</p>
+    <button onclick="addToCart('Coke', 70, 'downloadedImage (5).png')">Add to Cart</button>
+  </div>
+  <div class="menu-item">
+    <img src="Mojito.png" alt="Mojito">
+    <h3>Mojito</h3>
+    <p>₹100</p>
+    <button onclick="addToCart('Mojito', 100, 'Mojito.png')">Add to Cart</button>
+  </div>
+  <div class="menu-item">
+    <img src="downloadedImage (11).png" alt="Caramel flavored Ice Cream">
+    <h3>Caramel flavored Ice Cream</h3>
+    <p>₹90</p>
+    <button onclick="addToCart('Caramel flavored Ice Cream', 90, 'downloadedImage (11).png')">Add to Cart</button>
+  </div>
+  <div class="menu-item">
+    <img src="ChatGPT Image May 4, 2025, 10_47_58 AM.png" alt="Chocolate Dream Swirl Ice Cream">
+    <h3>Chocolate Dream Swirl Ice Cream</h3>
+    <p>₹90</p>
+    <button onclick="addToCart('Chocolate Dream Swirl Ice Cream', 90, 'ChatGPT Image May 4, 2025, 10_47_58 AM.png')">Add to Cart</button>
+  </div>
+  <div class="menu-item">
+    <img src="ChatGPT Image May 4, 2025, 10_41_39 AM.png" alt="Pista Chocolate Swirl Ice Cream">
+    <h3>Pista Chocolate Swirl Ice Cream</h3>
+    <p>₹90</p>
+    <button onclick="addToCart('Pista Chocolate Swirl Ice Cream', 90, 'ChatGPT Image May 4, 2025, 10_41_39 AM.png')">Add to Cart</button>
+  </div>
+</section>
+
+
+  <script>
+    function addToCart(name, price, image) {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({ name, price, image });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(`${name} added to cart!`);
+    }
+  </script>
+</body>
+</html>
